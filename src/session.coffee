@@ -4,6 +4,7 @@ Product = require './resources/product'
 Order = require './resources/order'
 ApplicationCharge = require './resources/application_charge'
 Article = require './resources/article'
+CarrierService = require './resources/carrier_service'
 Checkout = require './resources/checkout'
 Collect = require './resources/collect'
 Comment = require './resources/comment'
@@ -75,6 +76,7 @@ class Session
       @order = new Order(@site())
       @applicationCharge = new ApplicationCharge(@site())
       @article = new Article(@site())
+      @carrierService = new CarrierService(@site())
       @checkout = new Checkout(@site())
       @collect = new Collect(@site())
       @comment = new Comment(@site())
